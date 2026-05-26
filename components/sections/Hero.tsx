@@ -181,8 +181,8 @@ function Hero() {
                         variants={learnMoreVariants}
                     >
                         <Link href="#about" className="inline-flex gap-4 items-center ">
-                        Learn more about asanka
-                        <ArrowDown size={16} className="animate-bounce" />
+                            Learn more about asanka
+                            <ArrowDown size={16} className="animate-bounce" />
                         </Link>
                     </motion.p>
                 </motion.div>
@@ -202,7 +202,7 @@ function Hero() {
                             alt="Hero Illustration"
                             width={700}
                             height={841}
-                            className="md:w-full md:h-full md:object-contain dark:hidden"
+                            className="hidden md:block md:w-full md:h-full md:object-contain"
                             priority={true}
                             blurDataURL="/images/mock-ups/hero-mockup-new.webp"
                         />
@@ -224,7 +224,7 @@ function Hero() {
                             alt="Hero Illustration"
                             width={700}
                             height={841}
-                            className="md:w-full md:h-full md:object-contain hidden dark:block dark:md:hidden"
+                            className="md:w-full md:h-full md:object-contain block md:hidden"
                             priority={true}
                             blurDataURL="/images/mock-ups/hero-dark-mobile.webp"
                         />
@@ -241,8 +241,8 @@ function Hero() {
                             lg:right-[23%]
                             xl:right-[24%]
                             2xl:right-[32%]
-                            dark:hidden
-                            dark:md:block
+                            hidden
+                            md:block
                             dark:md:right-[6%]
                             dark:xl:right-[14%]
                             dark:2xl:right-[21.5%]
@@ -330,8 +330,8 @@ function Hero() {
                             md:top-[28%]
                             xl:-left-[2%]
                             2xl:left-[12%]
-                            dark:hidden
-                            dark:md:block
+                            hidden
+                            md:block
                             dark:md:left-[10%]
                             dark:2xl:left-[20%]
                             shadow-2xl border border-black/5 dark:border-white/5 z-20"
@@ -415,13 +415,13 @@ function Hero() {
                             lg:bottom-[35%] lg:right-[14%]
                             xl:right-[20%] xl:bottom-[30%]
                             2xl:right-[24%] 2xl:bottom-[35%]
-                            dark:hidden
-                            dark:md:flex
+                            hidden
+                            md:flex
                             dark:md:bottom-[26%] dark:md:right-[5%] 
                             dark:lg:bottom-[31%] dark:lg:right-[9%] 
                             dark:2xl:bottom-[33.5%] dark:2xl:right-[13%] 
                             shadow-2xl border border-black/5 dark:border-white/5 
-                            flex items-center gap-2 sm:gap-3 z-30"
+                            items-center gap-2 sm:gap-3 z-30"
                             initial="hidden"
                             variants={getBubbleVariants(2)}
                             animate={isMounted ? {

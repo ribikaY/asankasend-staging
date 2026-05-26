@@ -120,7 +120,7 @@ function Footer() {
           <p className="tracking-wide text-foreground/60">
             Copyright © 2026 Asanka send
           </p>
-          <p className="tracking-wide flex flex-wrap items-center gap-x-2">
+          <p className="tracking-wide flex flex-wrap items-center gap-x-2 max-w-64 sm:max-w-auto">
             <span className="text-foreground/60">All Rights Reserved</span>
             <span aria-hidden="true">|</span>
             <TermsAndConditionsDialog />

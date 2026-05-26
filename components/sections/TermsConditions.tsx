@@ -507,12 +507,12 @@ function TermsAndConditionsDocument() {
               <ol className="sub">
                 <li>
                   {
-                  "someone made a Payment Instruction without your permission; or"
+                    "someone made a Payment Instruction without your permission; or"
                   }
                 </li>
                 <li>
                   {
-                  "we fail to send a Transfer on time to the right Recipient account and for the right amount, as indicated on your confirmed Payment Instruction."
+                    "we fail to send a Transfer on time to the right Recipient account and for the right amount, as indicated on your confirmed Payment Instruction."
                   }
                 </li>
               </ol>
@@ -529,27 +529,27 @@ function TermsAndConditionsDocument() {
               <ol className="sub">
                 <li>
                   {
-                  "you have acted fraudulently;"
+                    "you have acted fraudulently;"
                   }
                 </li>
                 <li>
                   {
-                  "you intentionally or with gross negligence did not take all reasonable steps to keep your log in details or other security credentials secret;"
+                    "you intentionally or with gross negligence did not take all reasonable steps to keep your log in details or other security credentials secret;"
                   }
                 </li>
                 <li>
                   {
-                  "you are asking for a refund of a Transfer that took place before you told us that your log in was being misused;"
+                    "you are asking for a refund of a Transfer that took place before you told us that your log in was being misused;"
                   }
                 </li>
                 <li>
                   {
-                  "the Recipient received the money into their account at the Service Provider; or"
+                    "the Recipient received the money into their account at the Service Provider; or"
                   }
                 </li>
                 <li>
                   {
-                  "there was a mistake in the Recipient’s account details which you gave us."
+                    "there was a mistake in the Recipient’s account details which you gave us."
                   }
                 </li>
               </ol>
@@ -632,27 +632,27 @@ function TermsAndConditionsDocument() {
               <ol className="sub">
                 <li>
                   {
-                  "this Agreement and any amendments, modifications or supplements to it;"
+                    "this Agreement and any amendments, modifications or supplements to it;"
                   }
                 </li>
                 <li>
                   {
-                  "your Transfer History through the Service;"
+                    "your Transfer History through the Service;"
                   }
                 </li>
                 <li>
                   {
-                  "any initial, periodic or other disclosures or notices provided in connection with the Service, including without limitation those required by law;"
+                    "any initial, periodic or other disclosures or notices provided in connection with the Service, including without limitation those required by law;"
                   }
                 </li>
                 <li>
                   {
-                  "any customer service communications, including without limitation communications with respect to claims of error or unauthorised use of the Service; and"
+                    "any customer service communications, including without limitation communications with respect to claims of error or unauthorised use of the Service; and"
                   }
                 </li>
                 <li>
                   {
-                  "any other communication related to the Service or us."
+                    "any other communication related to the Service or us."
                   }
                 </li>
               </ol>
@@ -702,17 +702,17 @@ function TermsAndConditionsDocument() {
               <ol className="sub">
                 <li>
                   {
-                  "any failure to perform the Service as a result of circumstances which could reasonably be considered to be due to abnormal and unforeseen circumstances outside our reasonable control, which may for example include delays or failures caused by problems with another system or network (including those of our Service Providers), mechanical breakdown or data-processing failures;"
+                    "any failure to perform the Service as a result of circumstances which could reasonably be considered to be due to abnormal and unforeseen circumstances outside our reasonable control, which may for example include delays or failures caused by problems with another system or network (including those of our Service Providers), mechanical breakdown or data-processing failures;"
                   }
                 </li>
                 <li>
                   {
-                  "us meeting our obligations under any applicable laws, rules or regulations; or"
+                    "us meeting our obligations under any applicable laws, rules or regulations; or"
                   }
                 </li>
                 <li>
                   {
-                  "errors on the website or with the Service caused by incomplete or incorrect information provided to us by you or a third party."
+                    "errors on the website or with the Service caused by incomplete or incorrect information provided to us by you or a third party."
                   }
                 </li>
               </ol>
@@ -736,27 +736,27 @@ function TermsAndConditionsDocument() {
               <ol className="sub">
                 <li>
                   {
-                  "because of a change in legal or regulatory requirements;"
+                    "because of a change in legal or regulatory requirements;"
                   }
                 </li>
                 <li>
                   {
-                  "if the change benefits you;"
+                    "if the change benefits you;"
                   }
                 </li>
                 <li>
                   {
-                  "to reflect a change in our costs of providing you with the Service;"
+                    "to reflect a change in our costs of providing you with the Service;"
                   }
                 </li>
                 <li>
                   {
-                  "in response to possible risks to the security of your use of the Service; or"
+                    "in response to possible risks to the security of your use of the Service; or"
                   }
                 </li>
                 <li>
                   {
-                  "to respond to any other change that affects us, if it is fair to pass on the effects of the change to you."
+                    "to respond to any other change that affects us, if it is fair to pass on the effects of the change to you."
                   }
                 </li>
               </ol>
@@ -805,12 +805,12 @@ function TermsAndConditionsDocument() {
               <ol className="sub">
                 <li>
                   {
-                  "we reasonably believe you are using the Service fraudulently or illegally; or"
+                    "we reasonably believe you are using the Service fraudulently or illegally; or"
                   }
                 </li>
                 <li>
                   {
-                  "we have to do so by law."
+                    "we have to do so by law."
                   }
                 </li>
               </ol>
@@ -939,10 +939,10 @@ export function TermsAndConditionsDialog({
       <DialogTrigger asChild>
         {trigger ?? (
           <Button
-           variant="link"
-           className="h-auto px-0 text-base font-medium text-asanka-accent-muted underline transition-colors hover:text-asanka-secondary text-sm"
+            variant="link"
+            className="h-auto px-0 font-medium text-asanka-accent-muted underline transition-colors hover:text-asanka-secondary text-sm"
           >
-           Terms & Conditions
+            Terms & Conditions
           </Button>
         )}
       </DialogTrigger>
@@ -951,7 +951,7 @@ export function TermsAndConditionsDialog({
         aria-labelledby="terms-title"
       >
         <DialogTitle className="sr-only">{"Terms & Conditions"}</DialogTitle>
-        <div className="overflow-y-auto max-h-[85vh]">
+        <div className="overflow-y-auto overflow-x-hidden max-h-[85vh]">
           <TermsAndConditionsDocument />
         </div>
       </DialogContent>
