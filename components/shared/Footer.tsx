@@ -1,0 +1,135 @@
+"use client";
+
+import Image from "next/image";
+import { Badge } from "@/components/ui/badge";
+import { motion } from "motion/react";
+import PrivacyPolicy from "../sections/PrivacyPolicy";
+import TermsAndConditionsDialog from "../sections/TermsConditions";
+
+const watermarkVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      delay: 0.3,
+      type: "spring" as const,
+      stiffness: 60,
+      damping: 25,
+    },
+  },
+};
+
+function Footer() {
+  return (
+    <div id="contact" className="pt-10 pb-2 bg-gradient-footer">
+      <div className="container">
+        <div className="md:flex justify-between items-start space-y-6 md:space-y-0">
+          <Image
+            src="/images/logo/logo.svg"
+            alt="Asanka Send Logo"
+            width={177}
+            height={37}
+            className="h-auto w-[100px] sm:w-[120px] md:w-[140px] lg:w-[155px] shrink-0"
+          />
+
+          <div className="grid md:grid-cols-2 w-full max-w-sm md:max-w-md lg:max-w-2xl">
+            <div className="space-y-4 md:space-y-6">
+              <p className="text-[13px] text-muted-foreground font-medium">SITE MAP</p>
+              <div className="space-y-1.5">
+                <p className="text-foreground/80 hover:text-foreground cursor-pointer font-light">
+                  About Us
+                </p>
+                <p className="text-foreground/80 hover:text-foreground cursor-pointer font-light">
+                  Contacts
+                </p>
+              </div>
+            </div>
+
+            {/* contact section */}
+            <div className="space-y-4 md:space-y-6 mt-5 md:mt-0">
+              <Badge className="rounded-full bg-asanka-foreground dark:bg-[#084B27] text-white text-sm font-bold py-2.5 px-6 hover:bg-[#0a5d2f] transition-colors duration-200 shadow-sm">
+                Contact Us
+              </Badge>
+              <div className="space-y-3">
+                <p className="text-sm tracking-wide text-foreground">info@asankasend.com</p>
+                <p className="text-sm tracking-wide text-foreground">+ (44) 33 3303 1342</p>
+                <div className="flex gap-4">
+                  <div className="w-10 h-10 bg-white dark:bg-white/80 rounded-full flex items-center justify-center cursor-pointer hover:scale-105 transition-transform">
+                    <Image
+                      src="/images/icons/telegram.svg"
+                      alt="t"
+                      width={19}
+                      height={19}
+                    />
+                  </div>
+                  <div className="w-10 h-10 bg-white dark:bg-white/80 rounded-full flex items-center justify-center cursor-pointer hover:scale-105 transition-transform">
+                    <Image
+                      src="/images/icons/whatsapp.svg"
+                      alt="w"
+                      width={18}
+                      height={18}
+                    />
+                  </div>
+                  <div className="w-10 h-10 bg-white dark:bg-white/80 rounded-full flex items-center justify-center cursor-pointer hover:scale-105 transition-transform">
+                    <Image
+                      src="/images/icons/linkedin.svg"
+                      alt="l"
+                      width={18}
+                      height={18}
+                    />
+                  </div>
+                </div>
+              </div>
+              <p className="text-sm tracking-wide text-foreground leading-relaxed">Suite 1 Park plaza, Heath Hayes, Cannock, England, WS12 2DD
+                Mon.-Fri : 8am - 5pm GMT</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="relative w-full max-w-[1357px] mx-auto aspect-[1357/259] mt-6 sm:hidden">
+          <Image
+            src="/images/logo/logo-illustration.svg"
+            alt="Asanka Send Logo"
+            fill
+            priority={true}
+            blurDataURL="/images/logo/logo-illustration.svg"
+            className="object-contain"
+          />
+        </div>
+
+        <motion.div
+          className="hidden sm:block relative w-full max-w-[1357px] mx-auto aspect-[1357/259] mt-6 md:mt-2"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={watermarkVariants}
+        >
+          <Image
+            src="/images/logo/logo-illustration.svg"
+            alt="Asanka Send Logo"
+            fill
+            priority={true}
+            blurDataURL="/images/logo/logo-illustration.svg"
+            className="object-contain"
+          />
+        </motion.div>
+
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-1 sm:gap-3 md:gap-4 my-6 xl:px-14 text-[13px] md:text-[15px]">
+          <p className="tracking-wide text-foreground/60">
+            Copyright © 2026 Asanka send
+          </p>
+          <p className="tracking-wide flex flex-wrap items-center gap-x-2">
+            <span className="text-foreground/60">All Rights Reserved</span>
+            <span aria-hidden="true">|</span>
+            <TermsAndConditionsDialog />
+            <span aria-hidden="true">|</span>
+            <PrivacyPolicy />
+          </p>
+        </div>
+      </div>
+    </div>
+  )
+}
+export default Footer;
