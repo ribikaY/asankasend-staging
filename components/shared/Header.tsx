@@ -123,6 +123,15 @@ function Header() {
                         alt="Logo"
                         width={176}
                         height={50}
+                        className="dark:hidden"
+                    />
+
+                    <Image
+                        src="/images/logo/logo-dark.webp"
+                        alt="Logo"
+                        width={176}
+                        height={50}
+                        className="hidden dark:block opacity-80"
                     />
 
                     <div className="flex items-center gap-3.5">

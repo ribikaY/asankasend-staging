@@ -202,7 +202,7 @@ function Hero() {
                             alt="Hero Illustration"
                             width={700}
                             height={841}
-                            className="hidden md:block md:w-full md:h-full md:object-contain"
+                            className="hidden md:block md:w-full md:h-full md:object-contain dark:hidden"
                             priority={true}
                             blurDataURL="/images/mock-ups/hero-mockup-new.webp"
                         />
