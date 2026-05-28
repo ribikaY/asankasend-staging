@@ -25,7 +25,7 @@ function Header() {
 
     return (
         <header className="sticky w-full top-0 z-[50] bg-transparent">
-            <div className="py-3 md:py-5">
+            <div className="py-3 md:py-5 dark:py-3">
                 {/* Mobile Header */}
                 <div className="container flex md:hidden justify-between items-center">
                     <Menu
@@ -127,7 +127,7 @@ function Header() {
                     />
 
                     <Image
-                        src="/images/logo/logo-dark.webp"
+                        src="/images/logo/logo-dark1.webp"
                         alt="Logo"
                         width={176}
                         height={50}

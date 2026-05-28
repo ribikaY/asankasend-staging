@@ -31,7 +31,15 @@ function Footer() {
             alt="Asanka Send Logo"
             width={177}
             height={37}
-            className="h-auto w-[100px] sm:w-[120px] md:w-[140px] lg:w-[155px] shrink-0"
+            className="h-auto w-[100px] sm:w-[120px] md:w-[140px] lg:w-[155px] shrink-0 dark:hidden"
+          />
+
+          <Image
+            src="/images/logo/logo-dark1.webp"
+            alt="Asanka Send Logo"
+            width={177}
+            height={37}
+            className="h-auto w-[100px] sm:w-[120px] md:w-[140px] lg:w-[155px] shrink-0 hidden dark:block opacity-90"
           />
 
           <div className="grid md:grid-cols-2 w-full max-w-sm md:max-w-md lg:max-w-2xl">
