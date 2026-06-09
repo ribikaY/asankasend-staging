@@ -110,8 +110,7 @@ function WhyUs() {
                 alt="Money illustration"
                 width={672}
                 height={600}
-                priority
-                blurDataURL="/images/illustrations/send-money1.webp"
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 48vw, 45vw"
                 className="w-full h-auto object-cover dark:hidden"
               />
 
@@ -120,8 +119,7 @@ function WhyUs() {
                 alt="Money illustration"
                 width={672}
                 height={600}
-                priority
-                blurDataURL="/images/illustrations/send-money-dark.webp"
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 48vw, 45vw"
                 className="w-full object-cover h-[300px] md:h-[400px] lg:h-[500px] xl:h-auto xl:max-h-[653px] rounded-4xl xl:rounded-[50px] hidden dark:block"
               />
               <p className="text-sm font-heading font-bold text-white leading-4 absolute bottom-5 left-5 sm:hidden">
@@ -147,8 +145,7 @@ function WhyUs() {
                 alt="Airtime illustration"
                 width={672}
                 height={600}
-                priority
-                blurDataURL="/images/illustrations/airtime1.webp"
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 48vw, 45vw"
                 className="w-full h-auto object-cover dark:hidden"
               />
               <Image
@@ -156,8 +153,7 @@ function WhyUs() {
                 alt="Airtime illustration"
                 width={672}
                 height={600}
-                priority
-                blurDataURL="/images/illustrations/airtime1-dark.webp"
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 48vw, 45vw"
                 className="w-full object-cover h-[300px] md:h-[400px] lg:h-[500px] xl:h-auto xl:max-h-[653px] rounded-4xl xl:rounded-[50px] border border-border/50 hidden dark:block"
               />
               <p className="text-sm font-heading font-bold text-white leading-4 absolute bottom-5 left-5 sm:hidden">
@@ -177,7 +173,7 @@ function WhyUs() {
         alt="Asanka Illustration"
         width={570}
         height={633}
-        className="absolute -top-3 sm:top-0 md:top-32 -right-10 sm:right-0 opacity-80 dark:opacity-60 select-none pointer-events-none z-10 w-[300px] h-[422px] md:w-[450px] md:h-[633px]"
+        className="absolute -top-7 sm:top-0 md:top-32 -right-10 sm:right-0 opacity-80 dark:opacity-60 select-none pointer-events-none z-10 w-[300px] h-[422px] md:w-[450px] md:h-[633px]"
       />
 
     </div>
