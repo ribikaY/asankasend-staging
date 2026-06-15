@@ -162,7 +162,7 @@ function HowItWorks() {
             </motion.div>
             <div className="space-y-1 md:space-y-1.5">
               <h3 className="text-lg lg:text-xl font-semibold dark:text-foreground/80">Download the App</h3>
-              <p className="text-muted-foreground/80 dark:text-foreground/55 text-[15px] lg:text-base">Create an account and complete verification.</p>
+              <p className="text-muted-foreground/80 dark:text-foreground/55 text-sm sm:text-[15px] lg:text-base">Create an account and complete verification.</p>
             </div>
           </motion.div>
 
@@ -178,7 +178,7 @@ function HowItWorks() {
             </motion.div>
             <div className="space-y-1 md:space-y-1.5">
               <h3 className="text-lg lg:text-xl font-semibold dark:text-foreground/80">Add a payment method</h3>
-              <p className="text-muted-foreground/80 dark:text-foreground/55 text-[15px] lg:text-base">Use your card or bank transfer depending on your country.</p>
+              <p className="text-muted-foreground/80 dark:text-foreground/55 text-sm sm:text-[15px] lg:text-base">Use your card or bank transfer depending on your country.</p>
             </div>
           </motion.div>
 
@@ -194,7 +194,7 @@ function HowItWorks() {
             </motion.div>
             <div className="space-y-1 md:space-y-1.5">
               <h3 className="text-lg lg:text-xl font-semibold dark:text-foreground/80">Choose what you want to do</h3>
-              <p className="text-muted-foreground/80 dark:text-foreground/55 text-[15px] lg:text-base">Send money, pay a bill, save, or invest.</p>
+              <p className="text-muted-foreground/80 dark:text-foreground/55 text-sm sm:text-[15px] lg:text-base">Send money, pay a bill, save, or invest.</p>
             </div>
           </motion.div>
 
