@@ -101,8 +101,7 @@ function Footer() {
             src="/images/logo/logo-illustration.svg"
             alt="Asanka Send Logo"
             fill
-            priority={true}
-            blurDataURL="/images/logo/logo-illustration.svg"
+            loading="lazy"
             className="object-contain"
           />
         </div>
@@ -118,8 +117,7 @@ function Footer() {
             src="/images/logo/logo-illustration.svg"
             alt="Asanka Send Logo"
             fill
-            priority={true}
-            blurDataURL="/images/logo/logo-illustration.svg"
+            loading="lazy"
             className="object-contain"
           />
         </motion.div>

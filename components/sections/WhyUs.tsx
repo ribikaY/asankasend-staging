@@ -110,7 +110,9 @@ function WhyUs() {
                 alt="Money illustration"
                 width={672}
                 height={600}
-                sizes="(max-width: 640px) 100vw, (max-width: 768px) 48vw, 45vw"
+                sizes="(max-width: 640px) 90vw, (max-width: 768px) 48vw, 45vw"
+                quality={70}
+                loading="lazy"
                 className="w-full h-auto object-cover dark:hidden"
               />
 
@@ -119,7 +121,9 @@ function WhyUs() {
                 alt="Money illustration"
                 width={672}
                 height={600}
-                sizes="(max-width: 640px) 100vw, (max-width: 768px) 48vw, 45vw"
+                sizes="(max-width: 640px) 90vw, (max-width: 768px) 48vw, 45vw"
+                quality={70}
+                loading="lazy"
                 className="w-full object-cover h-[300px] md:h-[400px] lg:h-[500px] xl:h-auto xl:max-h-[653px] rounded-4xl xl:rounded-[50px] hidden dark:block"
               />
               <p className="text-sm font-heading font-bold text-white leading-4 absolute bottom-5 left-5 sm:hidden">

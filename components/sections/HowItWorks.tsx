@@ -138,8 +138,7 @@ function HowItWorks() {
             src="/images/mock-ups/app-icon.webp"
             alt="app icon"
             fill
-            priority={true}
-            blurDataURL="/images/mock-ups/app-icon.webp"
+            loading="lazy"
             className="object-contain"
           />
         </motion.div>

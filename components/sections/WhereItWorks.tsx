@@ -182,19 +182,21 @@ function WhereItWorks() {
         <Image
           src="/images/flags/countries.webp"
           alt="flags"
-          priority={true}
           width={824}
           height={383}
-          blurDataURL="/images/flags/countries.webp"
+          sizes="(max-width: 768px) 100vw, 45vw"
+          quality={70}
+          loading="lazy"
           className="dark:hidden"
         />
         <Image
           src="/images/illustrations/countries-dark.webp"
           alt="flags"
-          priority={true}
           width={824}
           height={383}
-          blurDataURL="/images/illustrations/countries-dark.webp"
+          sizes="(max-width: 768px) 100vw, 45vw"
+          quality={70}
+          loading="lazy"
           className="hidden dark:block"
         />
         <p className="hidden md:block font-light text-asanka-foreground font-heading">Coming very soon you can send to your loved ones to al 5<span className="font-sans">4</span> african countries</p>

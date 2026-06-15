@@ -1,26 +1,45 @@
-import Footer from "@/components/shared/Footer";
-import Download from "@/components/sections/Download";
-import FAQ from "@/components/sections/FAQ";
-import Features from "@/components/sections/Features";
+import dynamic from "next/dynamic";
 import Hero from "@/components/sections/Hero";
-import HowItWorks from "@/components/sections/HowItWorks";
-import WhereItWorks from "@/components/sections/WhereItWorks";
-import WhyUs from "@/components/sections/WhyUs";
-import FloatingOrb from "@/components/shared/FloatingOrb";
+import LazySection from "@/components/shared/LazySection";
+
+const FloatingOrb = dynamic(() => import("@/components/shared/FloatingOrb"));
+const WhyUs = dynamic(() => import("@/components/sections/WhyUs"));
+const Features = dynamic(() => import("@/components/sections/Features"));
+const Download = dynamic(() => import("@/components/sections/Download"));
+const WhereItWorks = dynamic(() => import("@/components/sections/WhereItWorks"));
+const FAQ = dynamic(() => import("@/components/sections/FAQ"));
+const HowItWorks = dynamic(() => import("@/components/sections/HowItWorks"));
+const Footer = dynamic(() => import("@/components/shared/Footer"));
 
 export default function Home() {
   return (
     <main className="font-sans overflow-hidden relative z-10">
       <div className="bioluminescent-bg" />
-      <FloatingOrb />
+      <LazySection minHeight="0" rootMargin="0px">
+        <FloatingOrb />
+      </LazySection>
       <Hero />
-      <WhyUs />
-      <Features />
-      <Download />
-      <WhereItWorks />
-      <FAQ />
-      <HowItWorks />
-      <Footer />
+      <LazySection minHeight="500px">
+        <WhyUs />
+      </LazySection>
+      <LazySection minHeight="600px">
+        <Features />
+      </LazySection>
+      <LazySection minHeight="400px">
+        <Download />
+      </LazySection>
+      <LazySection minHeight="400px">
+        <WhereItWorks />
+      </LazySection>
+      <LazySection minHeight="300px">
+        <FAQ />
+      </LazySection>
+      <LazySection minHeight="500px">
+        <HowItWorks />
+      </LazySection>
+      <LazySection minHeight="300px">
+        <Footer />
+      </LazySection>
     </main>
   );
 }

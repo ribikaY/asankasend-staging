@@ -34,7 +34,8 @@ function HeroIllustration() {
         width={700}
         height={841}
         className="md:w-full md:h-full md:object-contain block md:hidden"
-        sizes="(max-width: 767px) 100vw, 0px"
+        sizes="(max-width: 767px) 90vw, 0px"
+        quality={70}
         priority
         fetchPriority="high"
       />

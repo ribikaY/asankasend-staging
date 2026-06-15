@@ -113,8 +113,7 @@ function Download() {
           src="/images/mock-ups/app-transaction.webp"
           alt="Features Illustration"
           fill
-          priority={true}
-          blurDataURL="/images/mock-ups/app-transaction.webp"
+          loading="lazy"
           className="object-contain dark:hidden"
         />
 
@@ -122,8 +121,7 @@ function Download() {
           src="/images/mock-ups/app-transaction-dark.webp"
           alt="Features Illustration"
           fill
-          priority={true}
-          blurDataURL="/images/mock-ups/app-transaction-dark.webp"
+          loading="lazy"
           className="object-contain hidden dark:block"
         />
       </motion.div>

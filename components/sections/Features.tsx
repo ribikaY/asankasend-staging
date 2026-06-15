@@ -250,8 +250,7 @@ function Features() {
             alt="Globe Illustration"
             width={907}
             height={807}
-            priority={true}
-            blurDataURL="/images/illustrations/globe.svg"
+            loading="lazy"
             className="w-full h-full object-contain"
           />
         </motion.div>
