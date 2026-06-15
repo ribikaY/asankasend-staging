@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Header from "@/components/shared/Header";
+import HeroIllustration from "@/components/sections/HeroIllustration";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, ChevronDown, Download, Info } from "lucide-react";
 import Link from "next/link";
@@ -174,37 +175,7 @@ function Hero() {
                 <div className="relative w-full max-w-[450px] md:max-w-200 2xl:max-w-252 dark:2xl:max-w-245 aspect-square shrink-0">
                     <div className="relative left-2 sm:top-0 sm:left-0 md:top-2 md:left-14 dark:xl:left-0 w-full h-full">
 
-                        {/* Main Phone Image — desktop light mode */}
-                        <Image
-                            src="/images/mock-ups/hero-mockup-new.webp"
-                            alt="Hero Illustration"
-                            width={700}
-                            height={841}
-                            className="hidden md:block md:w-full md:h-full md:object-contain dark:hidden"
-                            priority
-                        />
-
-                        {/* Desktop dark mode */}
-                        <Image
-                            src="/images/mock-ups/hero-dark1.webp"
-                            alt="Hero Illustration"
-                            width={700}
-                            height={841}
-                            className="md:w-full md:h-full md:object-contain hidden dark:md:block"
-                            priority
-                        />
-
-                        {/* 
-                            Mobile version of the image
-                        */}
-                        <Image
-                            src="/images/mock-ups/hero-dark-mobile.webp"
-                            alt="Hero Illustration"
-                            width={700}
-                            height={841}
-                            className="md:w-full md:h-full md:object-contain block md:hidden"
-                            priority
-                        />
+                        <HeroIllustration />
 
                         {isMounted && (
                             <>
